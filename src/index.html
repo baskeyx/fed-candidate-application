@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+        <header id="latest">
+
+        </header>
+        <div id="target">Main content</div>
+        <div>© Copyright ITV plc 2018</div>
+
+        <!--scripts-->
+        <script data-main="js/main" src="js/lib/require.js"></script>
+        <script id="template" type="x-tmpl-mustache">
+            <section class="episodes">
+                <section class="episodes__list">
+                    {{#episodes}}
+                    <article class="episodes__item series-{{episode}}">
+                        <div class="episodes__wrapper">
+                        <picture>
+                            {{#imageLg}}<source srcset="{{imageLg}}" media="(min-width: 800px)">{{/imageLg}}
+                            {{#imageMd}}<source srcset="{{imageMd}}" media="(min-width: 600px)">{{/imageMd}}
+                            {{#image}}<img src="{{image}}" class="episodes__image"></img>{{/image}}
+                          </picture>
+                            {{#synopses}}<div class="episodes__description">{{synopses}}</div>{{/synopses}}
+                            <div class="episodes__broadcast">{{broadcasting}}</div>
+                        </div>
+                    </article>
+                    {{/episodes}}
+                </section>
+            </section>
+        </script>
+    </body>
+</html>

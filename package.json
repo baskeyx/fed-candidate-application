@@ -1,0 +1,29 @@
+{
+  "name": "browser-fed-test",
+  "version": "0.0.1",
+  "description": "Hub Browser candidate application test.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITV/player-browser-fed-application.git"
+  },
+  "author": "ITV",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ITV/player-browser-fed-application/issues"
+  },
+  "homepage": "https://github.com/ITV/player-browser-fed-application#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "mocha": "^3.5.2",
+    "sinon": "^3.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "normalize.css": "^8.0.0",
+    "load-grunt-tasks": "^3.5.2",
+    "requirejs": "^2.3.5",
+    "mustache": "^2.3.0"
+  },
+  "dependencies": {}
+}

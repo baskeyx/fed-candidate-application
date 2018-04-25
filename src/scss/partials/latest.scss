@@ -1,0 +1,42 @@
+$secondaryColor: #555;
+
+#latest{
+  font-family: Helvetica, sans-serif;
+  padding: .75rem;
+  > div{
+    margin: 0 auto 10px;
+  }
+  .latest__channel{
+    font-size:30px;
+  }
+  h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+  .latest__details span,
+  .latest__episodes{
+    color: $secondaryColor;
+  }
+}
+
+@media (min-width: 600px) {
+  #latest{
+    > div{
+      margin: 0 1%;
+      display: inline-block;
+      vertical-align: top;
+    }
+    .latest{
+      &__channel{
+        width: 15%;
+      }
+      &__details{
+        width: 60%;
+      }
+      &__episodes{
+        width: 15%;
+      }
+    }
+  }
+}
